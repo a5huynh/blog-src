@@ -1,0 +1,29 @@
+h1 { color: $orange; font-weight: normal; }
+h2, h3, h4 { color: $black; font-weight: normal; }
+
+h1 { font-size: $h1-size; line-height: $h1-size / 1.5; }
+h2 { font-size: $h2-size; }
+h3 { font-size: $h3-size; }
+h4 { font-size: $h4-size; }
+
+h2, h3, h4 {
+  &:before {
+    content: '# ';
+    color: $orange;
+    margin-left: -0.75em;
+  }
+}
+
+h3.year-group {
+  font-weight: normal;
+  color: lighten( $grey, 25% );
+  padding: 0;
+  margin-top: 0.2em;
+  margin-left: -3em;
+  float: left;
+
+  &:before {
+    content: none;
+    margin: 0;
+  }
+}

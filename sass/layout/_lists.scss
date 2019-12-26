@@ -1,0 +1,33 @@
+ol, ul {
+    margin: 0;
+    padding: 0;
+
+    ul {
+        padding-left: 1em !important;
+    }
+
+    li {
+        &::-moz-list-bullet {
+            color: $orange;
+        }
+    }
+}
+
+ol {
+    padding-bottom: 2em;
+
+    li {
+        counter-increment: list;
+        list-style-type: none;
+        position: relative;
+
+        &::before {
+            color: $orange;
+            content: counter(list) ".";
+            left:-32px;
+            position: absolute;
+            text-align: right;
+            width: 26px;
+        }
+    }
+}

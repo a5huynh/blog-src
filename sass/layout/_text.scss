@@ -1,0 +1,39 @@
+body {
+  font-family: $content-font;
+  font-size: $base-size;
+  font-weight: lighter;
+  margin-top: 1em;
+}
+
+// Basic text blocks
+p {
+  margin: 1em 0 1em 0;
+  padding: 0;
+  position: relative;
+}
+
+// Quoting something?
+blockquote {
+  color: $grey;
+  font-size: $small-content-size;
+  font-family: $header-font;
+  border-left: 8px solid $orange;
+
+  padding: 0;
+  margin: 1em 0 1em -1em;
+
+  > p {
+    margin: 0;
+    padding: 0.5em 0 0.5em 1.5em;
+  }
+
+  // When we're specifying the original author of this quote,
+  // add some padding beneath.
+  > ul li:last-child {
+    padding-bottom: 0.5em;
+  }
+}
+
+strong {
+  color: black;
+}

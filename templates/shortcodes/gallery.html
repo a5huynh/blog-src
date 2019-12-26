@@ -1,0 +1,17 @@
+<script type="text/javascript">
+    function show_image(image) {
+        document.getElementById('selected_img').src = image;
+    }
+</script>
+<div class="gallery">
+    <div class="gallery_nav">
+        <ul>
+            {% for image in images %}
+            <li><a href='javascript:void' onclick="show_image('{{ image }}')">·</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="gallery_container">
+        <img id="selected_img" src={{images[0]}} style="width:100%">
+    </div>
+</div>

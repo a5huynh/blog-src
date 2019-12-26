@@ -1,0 +1,3 @@
+# I <3 you robot. Robots need love too.
+User-agent: *
+Disallow: 

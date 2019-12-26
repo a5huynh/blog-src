@@ -1,0 +1,47 @@
+.header {
+  font-family: $header-font;
+  font-weight: normal;
+  font-size: $header-size;
+
+  margin-bottom: 32px;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+#big-name {
+  border-right: 8px solid $orange;
+
+  a {
+    font-size: 84px;
+    border: 0;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+#my-attrs {
+  float:left;
+  padding-left:20px;
+  padding-top:11px;
+  width: 284px;
+  margin-right: 8px;
+
+  div {
+    font-size: 32px;
+  }
+}
+
+#social-icons {
+  text-align: right;
+  font-size: 24px;
+  padding-top: 2px;
+
+  a {
+    /* Display the links as blocks */
+    /* Don't underline the social icon links */
+    line-height: 100%;
+    border-bottom: 0 !important;
+    outline: none;
+  }
+}

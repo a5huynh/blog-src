@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="650px" height="350px" viewBox="0 0 650 350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-9" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <rect id="path-11" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+        <rect id="path-13" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+        <rect id="path-15" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+        <rect id="path-17" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-18" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-17"></use>
+        </mask>
+        <rect id="path-19" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-20" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-19"></use>
+        </mask>
+        <rect id="path-21" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-22" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-21"></use>
+        </mask>
+        <rect id="path-23" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-24" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-23"></use>
+        </mask>
+        <rect id="path-25" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-26" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-25"></use>
+        </mask>
+        <rect id="path-27" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-28" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-27"></use>
+        </mask>
+        <rect id="path-29" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-30" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-29"></use>
+        </mask>
+        <rect id="path-31" x="0" y="0" width="47" height="47"></rect>
+        <mask id="mask-32" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="47" height="47" fill="white">
+            <use xlink:href="#path-31"></use>
+        </mask>
+    </defs>
+    <g id="Training" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Math" transform="translate(189.000000, 180.000000)" font-size="24" font-family="SourceCodePro-Regular, Source Code Pro" fill="#FF8000" font-weight="normal">
+            <text id="=">
+                <tspan x="0" y="24">=</tspan>
+            </text>
+            <text id="+">
+                <tspan x="157" y="24">+</tspan>
+            </text>
+            <text id="*">
+                <tspan x="301" y="24">*</tspan>
+            </text>
+        </g>
+        <g id="Actual" transform="translate(411.000000, 173.000000)">
+            <use id="Rectangle" stroke="#979797" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+            <text id="1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#FF8000">
+                <tspan x="16" y="32">1</tspan>
+            </text>
+        </g>
+        <text id="Actual" font-family="TimesNewRomanPSMT, Times New Roman" font-size="24" font-weight="normal" fill="#000000">
+            <tspan x="404" y="44">Actual</tspan>
+        </text>
+        <g id="Weights" transform="translate(262.000000, 81.000000)">
+            <g id="Cell-5" transform="translate(0.000000, 184.000000)">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-3"></use>
+                <text id="1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#FF8000">
+                    <tspan x="16" y="32">1</tspan>
+                </text>
+            </g>
+            <g id="Cell-4" transform="translate(0.000000, 138.000000)">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-6)" stroke-width="2" xlink:href="#path-5"></use>
+                <text id="1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#FF8000">
+                    <tspan x="16" y="32">1</tspan>
+                </text>
+            </g>
+            <g id="Cell-3" transform="translate(0.000000, 92.000000)">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-8)" stroke-width="2" xlink:href="#path-7"></use>
+                <text id="1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#FF8000">
+                    <tspan x="16" y="32">1</tspan>
+                </text>
+            </g>
+            <g id="Cell-2" transform="translate(0.000000, 46.000000)">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-10)" stroke-width="2" xlink:href="#path-9"></use>
+                <text id="1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#FF8000">
+                    <tspan x="16" y="32">1</tspan>
+                </text>
+            </g>
+            <g id="Cell-1">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-12)" stroke-width="2" xlink:href="#path-11"></use>
+                <text id="1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#FF8000">
+                    <tspan x="16" y="32">1</tspan>
+                </text>
+            </g>
+        </g>
+        <text id="Weights" font-family="TimesNewRomanPSMT, Times New Roman" font-size="24" font-weight="normal" fill="#000000">
+            <tspan x="246" y="44">Weights</tspan>
+        </text>
+        <g id="New-Weights" transform="translate(82.000000, 81.000000)">
+            <g id="Cell-5" transform="translate(0.000000, 184.000000)">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-14)" stroke-width="2" xlink:href="#path-13"></use>
+                <text id="0" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#D0011B">
+                    <tspan x="16" y="32">0</tspan>
+                </text>
+            </g>
+            <g id="Cell-4" transform="translate(0.000000, 138.000000)">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-16)" stroke-width="2" xlink:href="#path-15"></use>
+                <text id="2" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#7ED321">
+                    <tspan x="16" y="32">2</tspan>
+                </text>
+            </g>
+            <g id="Cell-3" transform="translate(0.000000, 92.000000)">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-18)" stroke-width="2" xlink:href="#path-17"></use>
+                <text id="0" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#D0011B">
+                    <tspan x="16" y="32">0</tspan>
+                </text>
+            </g>
+            <g id="Cell-2" transform="translate(0.000000, 46.000000)">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-20)" stroke-width="2" xlink:href="#path-19"></use>
+                <text id="0" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#D0011B">
+                    <tspan x="16" y="32">0</tspan>
+                </text>
+            </g>
+            <g id="Cell-1">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-22)" stroke-width="2" xlink:href="#path-21"></use>
+                <text id="2" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#7ED321">
+                    <tspan x="16" y="32">2</tspan>
+                </text>
+            </g>
+        </g>
+        <text id="New-Weights" font-family="TimesNewRomanPSMT, Times New Roman" font-size="24" font-weight="normal" fill="#000000">
+            <tspan x="41" y="44">New Weights</tspan>
+        </text>
+        <g id="History" transform="translate(537.000000, 81.000000)">
+            <g id="Cell-5" transform="translate(0.000000, 184.000000)">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-24)" stroke-width="2" xlink:href="#path-23"></use>
+                <text id="-1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#FF8000">
+                    <tspan x="9" y="32">-1</tspan>
+                </text>
+            </g>
+            <g id="Cell-4" transform="translate(0.000000, 138.000000)">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-26)" stroke-width="2" xlink:href="#path-25"></use>
+                <text id="1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#FF8000">
+                    <tspan x="16" y="32">1</tspan>
+                </text>
+            </g>
+            <g id="Cell-3" transform="translate(0.000000, 92.000000)">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-28)" stroke-width="2" xlink:href="#path-27"></use>
+                <text id="-1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#FF8000">
+                    <tspan x="9" y="32">-1</tspan>
+                </text>
+            </g>
+            <g id="Cell-2" transform="translate(0.000000, 46.000000)">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-30)" stroke-width="2" xlink:href="#path-29"></use>
+                <text id="-1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#FF8000">
+                    <tspan x="9" y="32">-1</tspan>
+                </text>
+            </g>
+            <g id="Cell-1">
+                <use id="Rectangle" stroke="#979797" mask="url(#mask-32)" stroke-width="2" xlink:href="#path-31"></use>
+                <text id="1" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#FF8000">
+                    <tspan x="16" y="32">1</tspan>
+                </text>
+            </g>
+        </g>
+        <text id="History" font-family="TimesNewRomanPSMT, Times New Roman" font-size="24" font-weight="normal" fill="#000000">
+            <tspan x="525" y="44">History</tspan>
+        </text>
+    </g>
+</svg>

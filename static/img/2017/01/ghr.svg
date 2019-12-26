@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="149px" viewBox="0 0 512 149" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Global-History-Register" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="0100-1011" font-family="SourceCodePro-Regular, Source Code Pro" font-size="24" font-weight="normal" fill="#FF8000">
+            <tspan x="191" y="56">0100 1011</tspan>
+        </text>
+        <g id="Group-2" transform="translate(167.000000, 63.000000)">
+            <path d="M30.5,30.5 L30.5,0.5" id="Line" stroke="#979797" stroke-linecap="square"></path>
+            <path id="Line-decoration-1" d="M30.5,0.5 L27.5,11.3 L33.5,11.3 L30.5,0.5 Z" stroke="#979797" stroke-linecap="square"></path>
+            <text id="not-taken" font-family="TimesNewRomanPSMT, Times New Roman" font-size="16" font-weight="normal" fill="#000000">
+                <tspan x="0" y="51">not taken</tspan>
+            </text>
+        </g>
+        <g id="Group" transform="translate(294.000000, 63.000000)">
+            <path d="M19.5,30.5 L19.5,0.5" id="Line" stroke="#979797" stroke-linecap="square"></path>
+            <path id="Line-decoration-1" d="M19.5,0.5 L16.5,11.3 L22.5,11.3 L19.5,0.5 Z" stroke="#979797" stroke-linecap="square"></path>
+            <text id="taken" font-family="TimesNewRomanPSMT, Times New Roman" font-size="16" font-weight="normal" fill="#000000">
+                <tspan x="0" y="51"> taken</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

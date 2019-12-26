@@ -1,0 +1,36 @@
+@import "constants";
+
+/**
+ * Code formatting
+ */
+pre {
+  padding: 16px;
+  font-family: $code-font;
+  font-size: $small-content-size;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+  border-radius: 3px;
+  border: 0;
+  overflow-x: auto;
+}
+
+figure.highlight {
+  border: 0;
+
+  pre {
+    border: 0;
+    padding: 0;
+  }
+}
+
+code {
+    background-color: $white;
+    border-radius: 8px;
+    color: $orange;
+    font-family: $code-font;
+    font-size: $small-content-size;
+    font-style: normal;
+    font-weight: 400;
+    padding: 4px;
+}

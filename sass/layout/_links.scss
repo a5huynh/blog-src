@@ -1,0 +1,17 @@
+// Normal links throughout the website
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: $orange;
+}
+
+// Title links
+.post-title {
+  a {
+    color: $black;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: inset 0 -2px 0 0 $orange;
+    }
+  }
+}

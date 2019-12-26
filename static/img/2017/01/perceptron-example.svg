@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="504px" height="120px" viewBox="0 0 504 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>perceptron-example</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Perceptron-Example" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Output" transform="translate(310.000000, 46.000000)">
+            <path d="M0,15 L110,15" id="Line" stroke="#FF8000" stroke-width="2" stroke-linecap="square"></path>
+            <path id="Line-decoration-1" d="M110,15 L99.2,12 L99.2,18 L110,15 Z" stroke="#FF8000" stroke-width="2" stroke-linecap="square"></path>
+            <text id="output" font-family="TimesNewRomanPS-ItalicMT, Times New Roman" font-size="24" font-style="italic" font-weight="normal" fill="#000000">
+                <tspan x="120" y="21">output</tspan>
+            </text>
+        </g>
+        <circle id="Oval" stroke="#FF8000" fill="#FF8000" cx="251" cy="61" r="55"></circle>
+        <g id="Inputs" transform="translate(50.000000, 2.000000)">
+            <g id="Input-x1" transform="translate(5.000000, 0.000000)">
+                <path d="M25,15 L150,15" id="Line" stroke="#FF8000" stroke-width="2" stroke-linecap="square"></path>
+                <path id="Line-decoration-1" d="M150,15 L139.2,12 L139.2,18 L150,15 Z" stroke="#FF8000" stroke-width="2" stroke-linecap="square"></path>
+                <text id="x1" font-family="TimesNewRomanPS-ItalicMT, Times New Roman" font-size="24" font-style="italic" font-weight="normal" fill="#000000">
+                    <tspan x="0.590899493" y="21">x</tspan>
+                    <tspan x="11.2432432" y="21" font-size="14">1</tspan>
+                </text>
+            </g>
+            <g id="Input-x2" transform="translate(0.000000, 44.000000)">
+                <path d="M30,15 L140,15" id="Line" stroke="#FF8000" stroke-width="2" stroke-linecap="square"></path>
+                <path id="Line-decoration-1" d="M140,15 L129.2,12 L129.2,18 L140,15 Z" stroke="#FF8000" stroke-width="2" stroke-linecap="square"></path>
+                <text id="x2" font-family="TimesNewRomanPS-ItalicMT, Times New Roman" font-size="24" font-style="italic" font-weight="normal" fill="#000000">
+                    <tspan x="5.70479911" y="21">x</tspan>
+                    <tspan x="16.3571429" y="21" font-size="14">2</tspan>
+                </text>
+            </g>
+            <g id="Input-x3" transform="translate(5.000000, 88.000000)">
+                <path d="M25,15 L150,15" id="Line" stroke="#FF8000" stroke-width="2" stroke-linecap="square"></path>
+                <path id="Line-decoration-1" d="M150,15 L139.2,12 L139.2,18 L150,15 Z" stroke="#FF8000" stroke-width="2" stroke-linecap="square"></path>
+                <text id="x3" font-family="TimesNewRomanPS-ItalicMT, Times New Roman" font-size="24" font-style="italic" font-weight="normal" fill="#000000">
+                    <tspan x="0.840806935" y="21">x</tspan>
+                    <tspan x="11.4931507" y="21" font-size="14">3</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

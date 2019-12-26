@@ -1,0 +1,59 @@
+// Image captions
+// Any text wrapped in an "<em>" tag after an image will be considered the
+// image caption
+figure + em,
+img + em {
+  font-size: $small-content-size;
+  font-style: normal;
+  line-height: $content-size * 1.25;
+  margin-right: -176px;
+  padding-top: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 160px;
+}
+
+figure + p > em {
+  display: block;
+  color: $grey;
+  font-size: $small-content-size;
+  font-style: normal;
+  line-height: $small-content-size * 2;
+  margin-top: -1.25em;
+  padding: 0.75em;
+  border: 1px solid $grey;
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+
+  strong {
+    color: $orange;
+    font-weight: normal;
+    font-variant: small-caps;
+  }
+}
+
+.caption {
+  font-size: $small-content-size;
+  font-style: normal;
+  line-height: $content-size * 1.25;
+  margin-right: -160px;
+  position: absolute;
+  right: 0;
+  width: 160px;
+}
+
+.caption_container {
+  position: relative;
+
+  .caption {
+    font-size: $small-content-size;
+    font-style: normal;
+    line-height: $content-size * 1.25;
+    margin-right: -160px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160px;
+  }
+}

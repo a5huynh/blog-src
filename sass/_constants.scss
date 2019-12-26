@@ -1,0 +1,23 @@
+// Font's used in the site
+$header-font: 'Inconsolata', sans-serif;
+$content-font: 'Yrsa', Georgia, 'Times New Roman', serif;
+$code-font: 'Source Code Pro', 'Inconsolata', 'Courier New', monospace;
+
+$golden-ratio: 1.6;
+$base-size: 16pt;
+$content-size: 1em;
+$small-content-size: 0.85em;
+$header-size: $content-size * 2;
+
+// Colors used in the site
+$white:  #FAFAFA;
+$orange: #ff8000;
+$blue:   #1691d8;
+$grey:   #999;
+$black:   darken( $grey, 30% );
+
+// Header sizes
+$h1-size: $header-size;
+$h2-size: 1.6em;
+$h3-size: 1.414em;
+$h4-size: 1.1em;

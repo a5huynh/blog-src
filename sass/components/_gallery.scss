@@ -1,0 +1,21 @@
+div.gallery {
+    div.gallery_nav {
+        display: block;
+        text-align: center;
+
+        li {
+            display: inline;
+
+            a {
+                font-size: 100px;
+                color: $grey;
+                border: 0;
+
+                &:hover, &:active {
+                    color: $orange;
+                }
+            }
+
+        }
+    }
+}
