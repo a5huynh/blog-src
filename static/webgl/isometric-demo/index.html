@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <title>Isometric Demo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        #toolbar {
+            padding: 1em;
+            position: absolute;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='toolbar'>
+        <div>
+            <button id='toggle_sprite'>sprite: true</button>
+            <button id='toggle_center'>centering: true</button>
+            <button id='toggle_rot'>rotation: true</button>
+            <button id='toggle_iso'>isometric: true</button>
+            <button id='toggle_scale'>scale: true</button>
+        </div>
+        <div>
+            <button id='rotate_left'>rotate ccw</button>
+            <button id='rotate_right'>rotate cw</button>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+
+</html>
