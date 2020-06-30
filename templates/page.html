@@ -1,3 +1,5 @@
+{% import "macros/tags.html" as tags %}
+
 {% extends "index.html" %}
 
 {% block content %}
@@ -8,12 +10,9 @@
     <span>{{ page.content | wordcount }} words</span>
   </p>
   {% if page.taxonomies.tags %}
-  <div class='post-tags'>
-  {% for tag in page.taxonomies.tags %}
-    <a href='{{ get_taxonomy_url(kind="tags", name=tag) }}'><span>#{{ tag }}</span></a>
-  {% endfor %}
-  </div>
+  {{ tags::render_list(tags=page.taxonomies.tags) }}
   {% endif %}
+
   {{ page.content | safe }}
   <span id='#thats-all-folks'>&#8718;</span>
 </div>

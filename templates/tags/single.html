@@ -1,3 +1,5 @@
+{% import "macros/tags.html" as tags %}
+
 {% extends "_layouts/main.html" -%}
 {% block content -%}
 {% set_global previous_year = 0 %}
@@ -25,17 +27,7 @@
             </div>
             <div class='post-excerpt'>{{ page.summary | safe }}</div>
             {% if page.taxonomies.tags %}
-            <div class='post-tags'>
-                {% for tag in page.taxonomies.tags %}
-                <a href='{{ get_taxonomy_url(kind="tags", name=tag) }}'>
-                    {% if tag == term.name %}
-                    <span class="selected-tag">#{{ tag }}</span></a>
-                    {% else %}
-                    <span>#{{ tag }}</span>
-                    {% endif %}
-                </a>
-                {% endfor %}
-            </div>
+            {{ tags::render_list(tags=page.taxonomies.tags, selected=term.name) }}
             {% endif %}
         </li>
         {% if loop.last -%}
