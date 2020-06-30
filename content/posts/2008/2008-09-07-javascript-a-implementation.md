@@ -1,5 +1,7 @@
 +++
 title = "Javascript A* Implementation"
+
+[taxonomies]
 tags = ["code"]
 
 [extra]

@@ -1,5 +1,7 @@
 +++
 title = "2011 - A Year in Recap"
+
+[taxonomies]
 tags = ["adventure"]
 
 [extra]

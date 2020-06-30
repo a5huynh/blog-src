@@ -1,5 +1,7 @@
 +++
 title = "Multitouch Table Prototype v2"
+
+[taxonomies]
 tags = ["code", "hardware"]
 
 [extra]

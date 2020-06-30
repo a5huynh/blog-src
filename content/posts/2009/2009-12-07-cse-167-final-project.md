@@ -1,5 +1,7 @@
 +++
 title = "CSE 167 Final Project"
+
+[taxonomies]
 tags = ["code"]
 
 [extra]

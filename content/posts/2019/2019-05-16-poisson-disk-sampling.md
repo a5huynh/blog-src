@@ -1,5 +1,7 @@
 +++
 title = "Generating Blue Noise w/ Poisson Disk Sampling"
+
+[taxonomies]
 tags = ["rustlang", "procgen"]
 
 [extra]

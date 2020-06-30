@@ -1,5 +1,7 @@
 +++
 title = "Trees and Penguins, Oh My!"
+
+[taxonomies]
 tags = ["code"]
 
 [extra]
