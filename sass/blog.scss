@@ -21,10 +21,11 @@ hr {
 }
 
 .article {
-  color:          $black;
-  line-height:    150%;
-  margin-bottom:  1em;
-  padding:        0 !important;
+  color: $black;
+  line-height: 150%;
+  margin: 0 auto 1em auto;
+  max-width: 680px;
+  padding: 0 3em;
 
   // Meta information about an article (date written/number of words/etc.)
   h1 {
@@ -42,13 +43,37 @@ hr {
 
 }
 
-div.section {
-  clear: both;
-  position: relative;
-  margin-top: 1em;
+// --------------------------------------------------------------------------------
+// Home page styles
+// --------------------------------------------------------------------------------
+
+// Each yearly list of posts
+div.year-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  > .posts {
+    max-width: 680px;
+  }
+}
+
+h3.year-group {
+  color: lighten($grey, 25%);
+  font-style: normal;
+  font-weight: normal;
+  margin: 0.2em 3em 0 1em;
+  padding: 0;
+  text-align: right;
+
+  &:before {
+    content: none;
+    margin: 0;
+  }
 }
 
 ul.posts {
+  flex-grow: 1;;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -56,28 +81,92 @@ ul.posts {
 
 .post-item {
   padding: 0.25em;
-  margin-bottom: 0.5em;
+  margin-bottom: 2em;
 
-  .post-title {
-    padding: 0;
-    margin: 0;
-  }
+  .post-header {
+    display: flex;
+    flex-direction: row;
 
-  .post-date {
-    margin-top: 0.25em;
-    font-size: 0.7em;
-    float: right;
-    color: $grey;
+    .post-title {
+      padding: 0;
+      margin: 0;
+    }
+
+    .post-date {
+      align-self: flex-end;
+      color: $grey;
+      flex-grow: 1;
+      font-size: 0.9em;
+      margin-right: 1em;
+      text-align: right;
+    }
   }
 
   .post-excerpt {
-    font-size: 0.75em;
+    font-size: 1em;
     padding-top: 0.5em;
+    padding-right: 1em;
     line-height: 175%;
     color: $grey;
 
     > p {
       margin: 0;
     }
+  }
+}
+
+.post-tags {
+  font-size: 0.8em;
+  margin-top: 1em;
+
+  span {
+    border-radius: 16px;
+    border: 1px solid $orange;
+    font-family: $header-font;
+    padding: 4px 8px;
+    margin-right: 1em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .article {
+    padding: 0 3em;
+  }
+
+  div.year-section {
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  .post-item {
+    .post-header {
+      flex-direction: column;
+
+      .post-date {
+        margin-top: 1em;
+        text-align: left;
+        align-self: flex-start;
+      }
+    }
+  }
+
+  h3.year-group {
+    margin: 0;
+    text-align: left;
+    padding-left: 0.5em;
+  }
+
+  ul.posts {
+    li.post-item {
+      margin: 0;
+      padding: 1em 2em;
+    }
+  }
+}
+
+@media (min-width: 650px) and (max-width: 900px) {
+  .article {
+    padding: 0 3em;
   }
 }

@@ -1,15 +1,24 @@
 ol, ul {
     margin: 0;
     padding: 0;
-
     ul {
-        padding-left: 1em !important;
+        padding-left: 1.5em !important;
     }
 
     li {
-        &::-moz-list-bullet {
+        &::marker {
             color: $orange;
+            content: '\2726';
+            text-align: left;
         }
+
+        &.post-item::marker {
+            content: '';
+        }
+
+        margin-left: -0.8em;
+        margin-bottom: 0.5em;
+        padding-left: 0.8em;
     }
 }
 

@@ -2,6 +2,7 @@
 <html lang='en'>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
   {% block favicon -%}
   <link rel="icon" href="{{ config.extra.favicon }}">
@@ -15,45 +16,45 @@
   {% endblock css -%}
 </head>
 <body>
-  <div class='container_12'>
-    {% block header -%}
-    <div class='header'>
-      <div id='big-name' class='grid_7'>
-        <a href='/'>Andrew Huynh</a>
+  {% block header -%}
+  <div class='header'>
+    <div id='big-name'>
+      <a href='/'>Andrew Huynh</a>
+    </div>
+    <div id='my-attrs'>
+      <div>Thoughts&nbsp;</div>
+      <div>and ramblings.</div>
+    </div>
+    <div id='social-icons'>
+      <div>
+        <a
+          href='http://www.google.com/recaptcha/mailhide/d?k=01uNCZrwDlz2I3VKthc1vVRw==&amp;c=6YTbdnM2V4n_HnbJamUSEoWCPMs3doQFXFC1r8BFdkU='>
+          <img src='{{ get_url(path="img/email.png", trailing_slash=false) }}' alt='Email me!'>
+        </a>
       </div>
-      <div id='my-attrs'>
-        <div>Thoughts</div>
-        <div>and ramblings.</div>
+      <div>
+        <a href='http://twitter.com/a5huynh'>
+          <img src='{{ get_url(path="img/twitter.png", trailing_slash=false) }}' alt='Follow me on Twitter!'>
+        </a>
       </div>
-      <div id='social-icons' class='grid_1'>
-        <div style='margin-bottom:4px;'>
-          <a
-            href='http://www.google.com/recaptcha/mailhide/d?k=01uNCZrwDlz2I3VKthc1vVRw==&amp;c=6YTbdnM2V4n_HnbJamUSEoWCPMs3doQFXFC1r8BFdkU='>
-            <img src='{{ get_url(path="img/email.png", trailing_slash=false) }}' alt='Email me!'>
-          </a>
-        </div>
-        <div style='margin-bottom:4px;'>
-          <a href='http://twitter.com/a5huynh'>
-            <img src='{{ get_url(path="img/twitter.png", trailing_slash=false) }}' alt='Follow me on Twitter!'>
-          </a>
-        </div>
-        <div>
-          <a href='http://www.linkedin.com/profile/view?id=30602610'>
-            <img src='{{ get_url(path="img/linkedin.png", trailing_slash=false) }}' alt='Check me out on LinkedIn.'>
-          </a>
-        </div>
+      <div>
+        <a href='http://www.linkedin.com/profile/view?id=30602610'>
+          <img src='{{ get_url(path="img/linkedin.png", trailing_slash=false) }}' alt='Check me out on LinkedIn.'>
+        </a>
       </div>
     </div>
-    {% endblock header -%}
-    {% block content -%}
-    {% endblock content -%}
   </div>
-  <div class='footer container_12'>
+  {% endblock header -%}
+  {% block content -%}
+  {% endblock content -%}
+  <div class='footer'>
     Rabble-rouser.<br>
     VP of Data @ <a href='https://huckleberry.co'>Huckleberry</a>.<br>
     Like what you see? My website is <a href='https://github.com/a5huynh/a5huynh.github.com'>open source!</a>
   </div>
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% block js %}
+  {% endblock js %}
 </body>
 </html>
