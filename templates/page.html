@@ -8,11 +8,11 @@
     <span>{{ page.content | wordcount }} words</span>
   </p>
   {% if page.taxonomies.tags %}
-  <p class='tags'>
-      {% for tag in page.taxonomies.tags %}
-      <a href='#{{ tag | slugify }}'>#{{ tag }}</a>
-      {% endfor %}
-  </p>
+  <div class='post-tags'>
+  {% for tag in page.taxonomies.tags %}
+    <a href='{{ get_taxonomy_url(kind="tags", name=tag) }}'><span>#{{ tag }}</span></a>
+  {% endfor %}
+  </div>
   {% endif %}
   {{ page.content | safe }}
   <span id='#thats-all-folks'>&#8718;</span>

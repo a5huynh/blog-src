@@ -119,6 +119,18 @@ ul.posts {
   font-size: 0.8em;
   margin-top: 1em;
 
+  a:hover {
+    span {
+      color: white;
+      background-color: $orange;
+    }
+  }
+
+  .selected-tag {
+    color: white;
+    background-color: $orange;
+  }
+
   span {
     border-radius: 16px;
     border: 1px solid $orange;

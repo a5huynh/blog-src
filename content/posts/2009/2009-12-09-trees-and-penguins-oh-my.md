@@ -2,7 +2,7 @@
 title = "Trees and Penguins, Oh My!"
 
 [taxonomies]
-tags = ["code"]
+tags = ["3d", "gamedev"]
 
 [extra]
 location = "San Diego"

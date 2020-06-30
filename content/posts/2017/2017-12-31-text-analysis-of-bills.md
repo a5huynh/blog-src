@@ -1,6 +1,9 @@
 +++
 title = "Text Analysis of U.S. Bills"
 
+[taxonomies]
+tags = ["python", "data-science"]
+
 [extra]
 location =  "Los Angeles/San Francisco"
 +++

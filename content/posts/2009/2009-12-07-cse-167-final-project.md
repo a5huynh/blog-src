@@ -2,7 +2,7 @@
 title = "CSE 167 Final Project"
 
 [taxonomies]
-tags = ["code"]
+tags = ["3d", "gamedev"]
 
 [extra]
 location = "San Diego"

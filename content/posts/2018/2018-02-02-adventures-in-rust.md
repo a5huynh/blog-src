@@ -1,6 +1,9 @@
 +++
 title = "Adventures in Rust: A Basic 2D Game"
 
+[taxonomies]
+tags = ["rustlang", "gamedev"]
+
 [extra]
 location = "San Francisco"
 +++
