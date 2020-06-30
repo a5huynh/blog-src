@@ -1,6 +1,9 @@
 +++
 title = "Planet Rendering Pt. 2"
 
+[taxonomies]
+tags = ["3d", "gamedev"]
+
 [extra]
 location = "Tokyo/San Francisco"
 +++

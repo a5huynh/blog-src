@@ -3,15 +3,18 @@
 // image caption
 figure + em,
 img + em {
-  font-size: $small-content-size;
-  font-style: normal;
-  line-height: $content-size * 1.25;
-  margin-right: -176px;
-  padding-top: 16px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 160px;
+  border: 1px solid $grey;
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 0 1px 0 rgba(0,0,0,0.5),0 1px 8px 0 rgba(0,0,0,0.15);
+
+  display: block;
+  font-size: $content-size;
+  margin: 0 0 2em 0;
+  padding: 1em;
+
+  position: relative;
+  width: auto;
 }
 
 figure + p > em {

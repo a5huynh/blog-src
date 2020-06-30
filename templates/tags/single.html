@@ -1,0 +1,40 @@
+{% import "macros/tags.html" as tags %}
+
+{% extends "_layouts/main.html" -%}
+{% block content -%}
+{% set_global previous_year = 0 %}
+<div class="year-section">
+    <h1>tag: #{{ term.name }}</h1>
+</div>
+{% for page in term.pages -%}
+{% set this_year = page.date | date(format="%Y") -%}
+{% if loop.first -%}
+<div class='year-section'>
+    <h3 class="year-group">{{ this_year }}</h3>
+    <ul class='posts'>
+        {% elif this_year != previous_year -%}
+    </ul>
+</div>
+<div class='year-section'>
+    <h3 class="year-group">{{ this_year }}</h3>
+    <ul class='posts'>
+        {% endif %}
+
+        <li class='post-item'>
+            <div class='post-header'>
+                <h3 class='post-title'><a href='{{ page.permalink | safe }}'>{{ page.title }}</a></h3>
+                <div class='post-date'>{{ page.date | date(format="%B %d") }}</div>
+            </div>
+            <div class='post-excerpt'>{{ page.summary | safe }}</div>
+            {% if page.taxonomies.tags %}
+            {{ tags::render_list(tags=page.taxonomies.tags, selected=term.name) }}
+            {% endif %}
+        </li>
+        {% if loop.last -%}
+    </ul>
+</div>
+{% endif -%}
+
+{% set_global previous_year = this_year %}
+{% endfor -%}
+{% endblock content -%}

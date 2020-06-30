@@ -1,6 +1,8 @@
 +++
 title = "CSE 167 Final Project - Results!"
-tags = ["code"]
+
+[taxonomies]
+tags = ["3d", "gamedev"]
 
 [extra]
 location = "San Diego"

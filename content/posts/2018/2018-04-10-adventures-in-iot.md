@@ -1,6 +1,9 @@
 +++
 title = "Adventures in IoT: Dev Environment"
 
+[taxonomies]
+tags = ["iot", "hardware"]
+
 [extra]
 location = "San Francisco"
 +++

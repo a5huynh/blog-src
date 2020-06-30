@@ -1,5 +1,7 @@
 +++
 title = "Rust & Wasm CHIP-8 Emulator"
+
+[taxonomies]
 tags = ["rustlang", "emudev"]
 
 [extra]
@@ -229,11 +231,13 @@ The 64x32 pixel display has a coordinate system that starts at the top left
 and extends downwards:
 
 ```
+
 ┌─────────────────┐
-│(0,0)      (63,0)│
-│                 │
-│(0,3)     (63,31)│
+│(0,0)         (63,0)│
+│                    │
+│(0,3)        (63,31)│
 └─────────────────┘
+
 ```
 
 Sprites that cross horizontal/vertical boundaries are wrapped to the other

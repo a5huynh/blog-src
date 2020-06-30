@@ -1,34 +1,40 @@
+{% import "macros/tags.html" as tags %}
+
 {% extends "_layouts/main.html" -%}
+
 {% block content -%}
-<div class='section'>
-  <div class='grid_2'>&nbsp;</div>
-  <div class='grid_8'>
-    {% set_global previous_year = 0 %}
-    {% set section = get_section(path="posts/_index.md") -%}
-    {% for page in section.pages -%}
-    {% set this_year = page.date | date(format="%Y") -%}
+{% set_global previous_year = 0 %}
+{% set section = get_section(path="posts/_index.md") -%}
+{% for page in section.pages -%}
+{% set this_year = page.date | date(format="%Y") -%}
 
-    {% if loop.first -%}
-    <h3 class="year-group">{{ this_year }}</h3>
-    <ul class='posts'>
-    {% elif this_year != previous_year -%}
-    </ul>
-    <h3 class="year-group">{{ this_year }}</h3>
-    <ul class='posts'>
-    {% endif %}
-      <li class='post-item'>
-        <h3 class='post-title'>
-          <a href='{{ page.permalink | safe }}'>{{ page.title }}</a>
-          <span class='post-date'>{{ page.date | date(format="%B %d") }}</span>
-        </h3>
-        <div class='post-excerpt'>{{ page.summary | safe }}</div>
-      </li>
-    {% if loop.last -%}
-    </ul>
-    {% endif -%}
-
-    {% set_global previous_year = this_year %}
-    {% endfor -%}
-  </div>
+{% if loop.first -%}
+<div class='year-section'>
+  <h3 class="year-group">{{ this_year }}</h3>
+  <ul class='posts'>
+{% elif this_year != previous_year -%}
+  </ul>
 </div>
+<div class='year-section'>
+  <h3 class="year-group">{{ this_year }}</h3>
+  <ul class='posts'>
+{% endif %}
+
+    <li class='post-item'>
+      <div class='post-header'>
+        <h3 class='post-title'><a href='{{ page.permalink | safe }}'>{{ page.title }}</a></h3>
+        <div class='post-date'>{{ page.date | date(format="%B %d") }}</div>
+      </div>
+      <div class='post-excerpt'>{{ page.summary | safe }}</div>
+      {% if page.taxonomies.tags %}
+        {{ tags::render_list(tags=page.taxonomies.tags) }}
+      {% endif %}
+    </li>
+{% if loop.last -%}
+  </ul>
+</div>
+{% endif -%}
+
+{% set_global previous_year = this_year %}
+{% endfor -%}
 {% endblock content -%}

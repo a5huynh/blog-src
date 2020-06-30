@@ -1,4 +1,3 @@
-@import "../960";
 @import "../instagram";
 
 *::selection {
@@ -21,7 +20,8 @@ p {
   & > a img {
     display: block;
     margin: 0 auto;
-    width: 496px;
+    width: 100%;
+    border: none;
   }
 }
 
@@ -39,6 +39,8 @@ iframe {
   }
 }
 
-img {
-  border-radius: 8px;
+@media (max-width: 650px) {
+  iframe {
+    height: 256px;;
+  }
 }

@@ -1,6 +1,9 @@
 +++
 title = "TBT: Planet Rendering"
 
+[taxonomies]
+tags = ["gamedev", "3d"]
+
 [extra]
 location = "San Francisco"
 +++

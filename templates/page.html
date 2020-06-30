@@ -1,24 +1,19 @@
+{% import "macros/tags.html" as tags %}
+
 {% extends "index.html" %}
 
 {% block content %}
-<div class='section'>
-  <div class='grid_2'>&nbsp;</div>
-  <div class='article grid_8'>
-    <h1>{{ page.title }}</h1>
-    <p class='meta'>
-      {{ page.date | date(format="%Y %B %e") }} - {{ page.extra.location }} |
-      <span>{{ page.content | wordcount }} words</span>
-    </p>
-    {% if page.taxonomies.tags %}
-    <p class='tags'>
-        {% for tag in page.taxonomies.tags %}
-        <a href='#{{ tag | slugify }}'>#{{ tag }}</a>
-        {% endfor %}
-    </p>
-    {% endif %}
-    {{ page.content | safe }}
-    <span id='#thats-all-folks'>&#8718;</span>
-  </div>
-  <div class='grid_2'>&nbsp;</div>
+<div class='article'>
+  <h1>{{ page.title }}</h1>
+  <p class='meta'>
+    {{ page.date | date(format="%Y %B %e") }} - {{ page.extra.location }} |
+    <span>{{ page.content | wordcount }} words</span>
+  </p>
+  {% if page.taxonomies.tags %}
+  {{ tags::render_list(tags=page.taxonomies.tags) }}
+  {% endif %}
+
+  {{ page.content | safe }}
+  <span id='#thats-all-folks'>&#8718;</span>
 </div>
 {% endblock content %}

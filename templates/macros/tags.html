@@ -1,0 +1,16 @@
+{% macro render_list(tags, selected="") %}
+{% if tags %}
+<div class='post-tags'>
+    {% for tag in tags %}
+    <a href='{{ get_taxonomy_url(kind="tags", name=tag) }}'>
+        <span
+            {% if tag == selected %}
+            class="selected-tag"
+            {% endif %}>
+            #{{ tag }}
+        </span>
+    </a>
+    {% endfor %}
+</div>
+{% endif %}
+{% endmacro input %}

@@ -25,12 +25,10 @@ figure.highlight {
 }
 
 code {
-    background-color: $white;
-    border-radius: 8px;
-    color: $orange;
-    font-family: $code-font;
-    font-size: $small-content-size;
-    font-style: normal;
-    font-weight: 400;
-    padding: 4px;
+  border-radius: 8px;
+  font-family: $code-font;
+  font-size: $small-content-size;
+  font-style: normal;
+  font-weight: 400;
+  padding: 4px;
 }

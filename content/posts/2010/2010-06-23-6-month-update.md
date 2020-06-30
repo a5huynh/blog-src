@@ -1,5 +1,7 @@
 +++
 title = "6-month Update!"
+
+[taxonomies]
 tags = ["adventure"]
 
 [extra]

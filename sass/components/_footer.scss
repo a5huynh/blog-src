@@ -5,3 +5,9 @@
   font-size: 0.75em;
   padding: 32px 0 48px 0;
 }
+
+@media (max-width: 650px) {
+  .footer {
+    font-size: 1em;
+  }
+}

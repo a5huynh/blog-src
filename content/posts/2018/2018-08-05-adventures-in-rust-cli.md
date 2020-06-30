@@ -1,6 +1,9 @@
 +++
 title = "Adventures in Rust: CLI"
 
+[taxonomies]
+tags = ["rustlang"]
+
 [extra]
 location = "San Francisco"
 +++

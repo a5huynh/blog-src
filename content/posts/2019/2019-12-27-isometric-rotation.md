@@ -1,5 +1,7 @@
 +++
 title = "Rotating an isometric projection"
+
+[taxonomies]
 tags = ["rustlang", "gamedev"]
 
 [extra]

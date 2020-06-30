@@ -1,6 +1,10 @@
 +++
 title = "tbt: Building TI-86 apps on OSX"
 
+[taxonomies]
+tags = ["ti86", "gamedev"]
+
+
 [extra]
 location = "San Francisco"
 +++

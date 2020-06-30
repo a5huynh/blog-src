@@ -1,6 +1,8 @@
 +++
 title = "Javascript A* Implementation"
-tags = ["code"]
+
+[taxonomies]
+tags = ["javascript", "algos"]
 
 [extra]
 location = "San Diego"

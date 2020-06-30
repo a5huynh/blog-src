@@ -1,6 +1,8 @@
 +++
 title = "Multitouch Table Prototype v2"
-tags = ["code", "hardware"]
+
+[taxonomies]
+tags = ["hardware"]
 
 [extra]
 location = "San Diego"
