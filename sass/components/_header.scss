@@ -48,6 +48,13 @@
     border-bottom: 0 !important;
     outline: none;
   }
+
+  div {
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
 }
 
 @media (max-width: 650px) {
@@ -84,6 +91,11 @@
     div {
       margin: 1em 0;
       padding: 0 1em;
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
     }
   }
 }
@@ -103,8 +115,4 @@
   #social-icons {
     align-self: center;
   }
-}
-
-@media (min-width: 901px) {
-
 }
