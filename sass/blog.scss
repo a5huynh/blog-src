@@ -56,7 +56,7 @@ ul.posts {
 
 .post-item {
   padding: 0.25em;
-  margin-bottom: 0.25em;
+  margin-bottom: 0.5em;
 
   .post-title {
     padding: 0;
@@ -73,7 +73,7 @@ ul.posts {
   .post-excerpt {
     font-size: 0.75em;
     padding-top: 0.5em;
-    line-height: 150%;
+    line-height: 175%;
     color: $grey;
 
     > p {
