@@ -2,7 +2,7 @@
 title = "Nets, Branches, and Pipes."
 
 [taxonomies]
-tags = ["python", "machine-learning"]
+tags = ["machine-learning"]
 
 [extra]
 location = "San Francisco"
