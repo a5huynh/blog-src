@@ -25,10 +25,10 @@ figure.highlight {
 }
 
 code {
-  border-radius: 8px;
   font-family: $code-font;
   font-size: $small-content-size;
   font-style: normal;
   font-weight: 400;
-  padding: 4px;
+  padding: 0;
+  margin: 0;
 }
