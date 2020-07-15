@@ -10,8 +10,10 @@ div.gallery {
                 font-size: 100px;
                 color: $grey;
                 border: 0;
+                outline: none;
 
                 &:hover, &:active {
+                    outline: none;
                     color: $orange;
                 }
             }
