@@ -37,7 +37,7 @@ to visualize each step of the transformation.
 
 > The code for the example is available [here][code-repo].
 
-[code-repo]: https://example.com
+[code-repo]: https://github.com/a5huynh/isometric-demo
 
 
 ## From grid to projection
