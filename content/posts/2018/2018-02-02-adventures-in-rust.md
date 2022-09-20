@@ -63,7 +63,7 @@ window and start the event loop.
 
 [get-started]: https://github.com/PistonDevelopers/Piston-Tutorials/tree/master/getting-started
 
-``` rust
+``` rust,linenos
 fn main() {
     // Original Defenders had a resolution of 320x256
     let mut app = App::new(GraphicsConfig::new("Defender", 960, 768));
@@ -89,7 +89,7 @@ position (`x`,`y`) and `rotation`.*
 While in `lib.rs` we have the basic render and update loops to blank out
 the screen, draw a red square, and then rotate it as seen below.
 
-``` rust
+``` rust,linenos
 // Handle rendering any objects on screen.
 pub fn render(&mut self, args: &RenderArgs) {
     // Get the location of the "player" we want to render.
@@ -141,7 +141,7 @@ Piston example to listen for and process keyboard events as we see below:
 
 [events]: http://docs.piston.rs/piston/event_loop/struct.Events.html
 
-``` rust
+``` rust,linenos
 pub fn input(&mut self, button: &Button) {
     if let Button::Keyboard(key) = *button {
         match key {
@@ -171,7 +171,7 @@ and optionally an `update` function.
 
 [traits]: https://doc.rust-lang.org/book/second-edition/ch10-02-traits.html
 
-``` rust
+``` rust,linenos
 // Every object that needs to be rendered on screen.
 pub trait GameObject {
     fn render(&self, ctxt: &Context, gl: &mut GlGraphics);
@@ -207,7 +207,7 @@ for the player into `models/player.rs`. This simplifies the main render and
 update loop in `lib.rs` and sets the stage for future drawable objects such
 as enemies, bullets, and other things.
 
-``` rust
+``` rust,linenos
 impl GameObject for Player {
     fn render(&self, ctxt: &Context, gl: &mut GlGraphics) {
         // Render the player as a little square
@@ -244,7 +244,7 @@ position and the radius of its bounding circle.
 Below is the snippet from the `GameObject` trait that handles collision
 detection:
 
-``` rust
+``` rust,linenos
 fn collides(&self, other: &GameObject) -> bool {
     // Two circles intersect if the distance between their centers is
     // between the sum and the difference of their radii.
@@ -267,7 +267,7 @@ To run the actual collision check, we loop through each bullet and enemy
 during the update loop and check to see if they've collided. If so, we
 remove both from the screen and update our score.
 
-``` rust
+``` rust,linenos
 for bullet in self.bullets.iter_mut() {
     // Did bullet collide with any enemies
     for enemy in self.enemies.iter_mut() {
@@ -308,7 +308,7 @@ First and foremost, we need to load the font we want to use. I chose a fantastic
 
 [old-school]: https://int10h.org/oldschool-pc-fonts/readme/
 
-``` rust
+``` rust,linenos
 let glyph_cache = GlyphCache::new(
     "./assets/fonts/PxPlus_IBM_VGA8.ttf",
     (),
@@ -318,7 +318,7 @@ let glyph_cache = GlyphCache::new(
 
 And finally in our render loop, draw the current score on screen.
 
-``` rust
+``` rust,linenos
 text::Text::new_color(::color::WHITE, 16)
     .draw(
         format!("Score: {}", score).as_str(),
@@ -337,7 +337,7 @@ loops. For example, in the snippet below we check that we've reached either
 a `GameStatus::Died` or `GameStatus::Win` and render the appropriate
 message to show the user.
 
-``` rust
+``` rust,linenos
 let viewport = [size.width as f64, size.height as f64];
 match state.game_status {
     GameStatus::Died => {

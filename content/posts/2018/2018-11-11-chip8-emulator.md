@@ -147,7 +147,7 @@ display/memory/registers, and finally handle any keyboard input.
 If we had a function that would handle each `tick` of the CPU, it would
 look something very similar to the following:
 
-``` rust
+``` rust,linenos
 fn tick(&mut self) {
     // 1. Find the opcode pointed to by the `PC` register.
     let opcode = self.fetch()
@@ -173,7 +173,7 @@ byte order would like the following:
 
 [msb]: https://en.wikipedia.org/wiki/Bit_numbering#Most_significant_byte
 
-``` rust
+``` rust,linenos
 let opcode = u16::from(mem[pc]) << 8 | u16::from(mem[pc + 1]);
 ```
 
@@ -186,7 +186,7 @@ opcodes into different prefixes (`0x1000`, `0x2000`, etc) and implemented the
 logic for each corresponding prefix. For example, lets take the simple `0x00E0`
 opcode that is used to completely clear the screen:
 
-``` rust
+``` rust,linenos
 // First, we grab the first bytes of the opcode as a prefix
 let prefix = opcode & 0xF000;
 // Grab the lower two bytes.
@@ -271,7 +271,7 @@ public handleKeyPress(ev: KeyboardEvent) {
 And for the rust side, we keep track of the currently pressed key as well
 as setting the key to pressed until we receive a release event for that key.
 
-``` rust
+``` rust,linenos
 pub fn key_press(&mut self, key: Key) {
     self.current_key = Some(key);
     self.keys[key as usize] = true;

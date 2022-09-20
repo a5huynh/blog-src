@@ -31,7 +31,7 @@ below) to generate a UV sphere is relatively compact and easy to follow
 making for a quick implementation and allowing us to focus on the terrain
 generation and animation used in the project.
 
-``` javascript
+``` javascript,linenos
     // Columns
     var gamma = 0.0;
     var gammaStep = 2 * Math.PI / numFaces;

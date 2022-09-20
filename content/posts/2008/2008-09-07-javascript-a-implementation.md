@@ -59,7 +59,7 @@ my implementation.
 
 First off we have the Node object.
 
-``` javascript
+``` javascript,linenos
 function Node(parentNode, cx, cy, g, h) {
   this.parent = parentNode;
   this.x = cx;
@@ -84,7 +84,7 @@ closer to the goal are picked over others.
 Now lets take a look at the core stuff itself. The code that actual finds
 the path for us.
 
-``` javascript
+``` javascript,linenos
 Astar.prototype = {
   // Various Vars
   _open: [],
@@ -125,7 +125,7 @@ the path the algorithm found `_CreateNode` `_fillChildren` `_getBestNode`
 an `_isAvailable` are used by the algorithm to find the path.
 
 The algorithm itself is in findPath and is shown below...
-``` javascript
+``` javascript,linenos
 for(var count = 0; count < 100; count++) {
   bestNode = this._getBestNode();
   if( bestNode == null ) break;
@@ -144,7 +144,7 @@ check if it has reached it's destination and then if not, add the children
 of node to the open list, where the process is started all over.
 
 So how is the best node retreived?
-``` javascript
+``` javascript,linenos
 Astar.prototype._getBestNode = function() {
   if(this._open.length > 0) {
     var bestNum = 0;
@@ -181,7 +181,7 @@ So far, you've only seen how nodes are picked, but the key to this
 algorithm is how the node scores are determined, because the rest is simply
 a BFS using these scores as a priority.
 
-``` javascript
+``` javascript,linenos
 Astar.prototype._fillChildren = function(node) {
   // Top (North) Tile.
   if( this._ValidTile(node.x, node.y-1) )

@@ -68,7 +68,7 @@ to explicitly add each folder. This can be accomplished by editing the
 > Note: The `c_cpp_properties.json` file can be accessed via the command
 > palette: `⌘⬆P -> C/Cpp: Edit Configurations`.
 
-``` javascript
+``` javascript,linenos
 // note to save some space,
 // $PACKAGES = $HOME/Library/Arduino15/packages/arduino
 "includePath": [

@@ -71,7 +71,7 @@ For the implementation itself, I used:
 * [TFT_eSPI][tft-espi] to display the results
 
 The basic loop function would look like something below:
-``` c
+``` c,linenos
 bool updateScreen = false;
 
 void loop() {

@@ -65,7 +65,7 @@ The poisson disk sampler requires only a couple parameters to get started.
 
 Converting this into `rust`, we'll get the the following:
 
-``` rust
+``` rust,linenos
 struct PoissonDisk {
     pub minimum_distance: usize,
     pub num_samples: usize,
@@ -112,7 +112,7 @@ In our `rust` implementation, we’ll represent the grid as a
 sampled point `(usize, usize)`. Building on the example code we had before,
 the `struct` and `new` function should now look like below:
 
-``` rust
+``` rust,linenos
 struct PoissonDisk {
     ..., // fields from before
     width: usize,
@@ -149,7 +149,7 @@ calculate the index into the grid array. Now every time we generate a new
 point, we can simply call `self.insert_point(new_point)` to add the point
 to the grid.
 
-``` rust
+``` rust,linenos
 fn insert_point(&mut self, point: (usize, usize)) {
     // Calculate the (x, y) coordinate when place inside the grid.
     let cell_x = (point.0 as f64 / self.cell_size).floor();
@@ -182,7 +182,7 @@ list.
 Putting it all together with the example code that we have so far, the
 `new` function should look a little something like below.
 
-``` rust
+``` rust,linenos
 use rand;
 
 struct PoissonDisk {
@@ -237,7 +237,7 @@ Breaking down the loop step by step, we'll first tackle randomly selecting a poi
 from the active list. Given an active list of length \\(l\\), we randomly
 choose an index between \\(0\\) and \\(l - 1\\).
 
-``` rust
+``` rust,linenos
 // Generate a random index in our active list.
 let idx = rng.gen::<f64>() * (self.active.len() - 1) as f64;
 let source = self.active[idx as usize];
@@ -270,7 +270,7 @@ cartesian coordinates.
 Using this knowledge, lets create a new function, `generate_around`,
 that will generate new points around the source point:
 
-``` rust
+``` rust,linenos
 fn generate_around(&mut self, pt: (usize, usize)) -> (usize, usize) {
     let mut rng = rand::thread_rng();
     // Random angle

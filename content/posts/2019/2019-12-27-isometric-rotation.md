@@ -62,7 +62,7 @@ Assuming the grid to be in Euclidean space where `(0,0)` is
 at the bottom left, the 2D array of tiles we'll be using in our example
 will be represented roughly like the code snippet below:
 
-``` javascript
+``` javascript,linenos
 enum Tiles = {
     GRASS,
     DIRT
@@ -78,7 +78,7 @@ let map = [
 We can loop through each row and column and render each tile of the grid at
 their respective `(col, row)` point to get something basic on screen.
 
-``` javascript
+``` javascript,linenos
 let geometry = new THREE.PlaneGeometry( 32, 32 );
 
 let even = new THREE.MeshBasicMaterial({ color: 0xff0000 });
@@ -194,7 +194,7 @@ $$
 
 Now in code, this would look like so for some angle `rot`:
 
-``` javascript
+``` javascript,linenos
 let cos_rot = Math.cos(rot);
 let sin_rot = Math.sin(rot);
 
@@ -214,7 +214,7 @@ location we're viewing.
 Combining the rotation with the earlier scaling and isometric projection, we get
 the following code:
 
-``` javascript
+``` javascript,linenos
 // Center grid on the origin
 let cx = x - GRID_WIDTH;
 let cy = y - GRID_HEIGHT;

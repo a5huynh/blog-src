@@ -79,7 +79,7 @@ subcommands:
 
 This then enables me to initialize the parser in two very simple lines as seen below:
 
-``` rust
+``` rust,linenos
 #[macro_use]
 extern crate clap;
 use clap::App;
@@ -164,7 +164,7 @@ To connect to the database, I’m using the
 to the database and run a simple select query on the notes table just to
 really hammer home how simple it is.
 
-``` rust
+``` rust,linenos
 use rusqlite::{ Connection };
 use libcub::note::{ Note };
 
@@ -191,7 +191,7 @@ to represent each filter and modify the query accordingly. For example, when
 I added the filters for archived and trashed notes, this is how the query
 string was modified:
 
-``` rust
+``` rust,linenos
 for filter in filters {
     match filter {
         NoteStatus::ARCHIVED => {
@@ -211,7 +211,7 @@ Each filter is converted into its equivalent SQL syntax and then added to
 a vector of filters. This vector is then later on joined to the query
 string using a string format.
 
-``` rust
+``` rust,linenos
 format!("{} WHERE {}", query, filter_sql.join(" OR "));
 ```
 
