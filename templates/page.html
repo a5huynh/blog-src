@@ -4,6 +4,15 @@
 
 {% block title %}{{ page.title }}{% endblock title %}
 
+{% block meta %}
+<meta name="title" content="{{ page.title }}" />
+<meta name="description" content="{{ page.summary }}" />
+
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.summary }}" />
+<meta property="og:type" content="website" />
+{% endblock meta %}
+
 {% block content %}
 <div class='article'>
   <h1>{{ page.title }}</h1>
@@ -15,7 +24,9 @@
   {{ tags::render_list(tags=page.taxonomies.tags) }}
   {% endif %}
 
-  {{ page.content | safe }}
+  <div class='post'>
+    {{ page.content | safe }}
+  </div>
   <span id='#thats-all-folks'>&#8718;</span>
 </div>
 {% endblock content %}
