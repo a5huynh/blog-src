@@ -12,6 +12,7 @@
   {% block favicon -%}
   <link rel="icon" href="{{ config.extra.favicon }}">
   {% endblock favicon -%}
+
   {% if config.generate_rss -%}
   <link rel="alternate" type="application/rss+xml" title="{{ base_url }}" href="{{ base_url }}/feed.rss">
   {% endif -%}
@@ -54,7 +55,8 @@
   {% endblock content -%}
   <div class='footer'>
     Rabble-rouser.<br>
-    Founder @ New Thing<br>
+    Follow me on <a rel="me" href="https://mastodon.social/@a5huynh">Mastodon</a>.<br>
+    Founder @ <a href='https://spyglass.fyi'>Spyglass Search</a>.<br>
     Like what you see? My website is <a href='https://github.com/a5huynh/a5huynh.github.com'>open source!</a>
   </div>
   <script type="text/javascript"
