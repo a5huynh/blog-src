@@ -177,7 +177,7 @@ the region of interest to confirm framing before trusting a 0px result.
 ```sh
 zola serve      # http://127.0.0.1:1111, live reload
 zola build      # → ./public (gitignored)
-zola check      # link check + config validation (currently 17 pre-existing dead links)
+zola check      # link check + config validation (5 known-bad links remain, see below)
 ```
 
 To preview a build in a headless browser without running a server, bake a `file://`
@@ -193,13 +193,32 @@ Images in content use root-absolute paths (`/img/…`), which don't resolve unde
 
 There is **no CI** — deploy is a manual copy into the sibling output repo. See
 `../a5huynh.github.com/AGENTS.md` for the `rsync` invocation and the list of
-hand-maintained files there that must not be clobbered. Commit in both repos.
+hand-maintained files there that must not be clobbered.
 
-## Git
+## Workflow: branch and PR before deploying
 
-- Branches: `a5huynh/<type>/<short-name>`. Post branches historically used
-  `posts/<year>/<slug>`.
-- GitHub operations via the `gh` CLI. Confirm before pushing or opening PRs.
+**Never commit straight to `master`, and never deploy unmerged work.** `master` moves
+only by merging a PR, and the output repo is always built from a merged `master`.
+
+1. Branch: `a5huynh/<type>/<short-name>` (`feature`, `bug`, `chore`…). Post branches
+   historically used `posts/<year>/<slug>`.
+2. Commit there, push, open a PR with `gh pr create`.
+3. Wait for it to be merged — ask, don't merge on someone's behalf.
+4. Only then `git checkout master && git pull`, rebuild, and deploy to
+   `../a5huynh.github.com`.
+
+So a change ships in two commits in two repos: the source PR, then a separate
+"Rebuild" commit in the output repo once it has landed.
+
+GitHub operations go through the `gh` CLI. Confirm before pushing or opening PRs.
+
+### Known-bad links
+
+`zola check` reports 5 failures that are deliberate and should be left alone:
+congress.gov and tripit 403 to scripted clients but work in a browser;
+`graphics.ucsd.edu/twiki/…` and `rockmyworld.dvanoni.com` are gone with no Wayback
+snapshot. The checker is also flaky on timeouts — retry before believing a new
+failure (lighthouse3d has reported broken once and returned 200 on every retry).
 
 ## License
 
