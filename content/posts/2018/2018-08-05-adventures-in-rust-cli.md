@@ -25,8 +25,8 @@ Plus I thought up a fantastic name for the utility, `cub` for
 
 You can check out the code for this [project here](https://github.com/a5huynh/cub-cli).
 
-[bear-app]: https://bear-writer.com
-[rust-game]: https://a5huynh.github.io/2018/02/02/adventures-in-rust.html
+[bear-app]: https://bear.app
+[rust-game]: @/posts/2018/2018-02-02-adventures-in-rust.md
 
 
 ## What this will cover
@@ -40,7 +40,7 @@ Here are the things I cover in this post in case you want to skip around:
 ## Setting up a CLI
 
 After checking out a couple ways of extracting arguments from the command
-line, I settled on [clap](https://clap.rs) mainly due to the ability to
+line, I settled on [clap](https://github.com/clap-rs/clap) mainly due to the ability to
 configure the parser using a yaml file. This keeps my rust code focused on
 the implementation logic of the utility and moves most of the configuration
 boilerplate into a completely separate non-rust file.

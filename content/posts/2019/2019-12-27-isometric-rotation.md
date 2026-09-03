@@ -16,7 +16,7 @@ isometric 2.5D view much like SimCity 3000 or Civilization, all from
 pre-rendered sprites.
 
 [rust]: https://www.rust-lang.org/
-[amethyst]: https://amethyst.rs/
+[amethyst]: https://github.com/amethyst/amethyst
 
 <!-- more -->
 

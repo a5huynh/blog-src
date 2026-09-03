@@ -37,7 +37,7 @@ are some resources I found immensely useful:
 * [Rust Subreddit][subreddit].
 * [Rust web playground][rust-play].
 
-[rust-book]: https://doc.rust-lang.org/book/second-edition/ch01-00-introduction.html
+[rust-book]: https://doc.rust-lang.org/book/second-edition/ch01-00-getting-started.html
 [subreddit]: https://reddit.com/r/rust
 [rust-play]: https://play.rust-lang.org/
 
@@ -380,7 +380,7 @@ also introducing a lot of compelling new functionality such as
 [closures][rust-closures], [traits][traits], and [lifetimes][rust-lifetimes].
 
 [structs]: https://en.wikipedia.org/wiki/Struct_(C_programming_language)
-[rust-closures]: https://rustbyexample.com/fn/closures.html
+[rust-closures]: https://doc.rust-lang.org/rust-by-example/fn/closures.html
 [rust-lifetimes]: https://doc.rust-lang.org/book/second-edition/ch10-03-lifetime-syntax.html
 [rust-refs]: https://doc.rust-lang.org/book/second-edition/ch04-02-references-and-borrowing.html
 

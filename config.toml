@@ -7,8 +7,10 @@ description = "Thoughts and ramblings."
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
-# Whether to build a search index to be used later on by a JavaScript library
-build_search_index = true
+# No search UI exists, and the generated index (elasticlunr.min.js +
+# search_index.en.js, ~870KB) was referenced by zero pages. Flip back on if a
+# search box is ever added.
+build_search_index = false
 
 # Atom feed at /atom.xml
 generate_feeds = true

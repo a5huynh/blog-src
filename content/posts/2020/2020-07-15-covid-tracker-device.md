@@ -108,7 +108,7 @@ build a similar stats tracker in any other language/platform.
 Now for the hardware.
 
 To keep track of all the different wires, I used
-[kicad](https://kicad-pcb.org/) to build out a schematic based on the
+[kicad](https://www.kicad.org/) to build out a schematic based on the
 breadboard prototype I had built. As I get better at kicad, my hope is
 eventually turn some of these schematics into actual PCBs that can be
 printed, but for the time being, it's a handy way to visualize the
