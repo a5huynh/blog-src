@@ -25,6 +25,15 @@ code {
   margin: 0;
 }
 
+// The rule above is meant for inline <code> in prose, but giallo wraps code
+// blocks in <pre><code>, where it compounded with the `pre` font-size: code
+// blocks rendered at 0.85 x 0.85 = 0.72em (11.56px) while inline code in a
+// paragraph rendered at 0.85em (13.6px). Blocks were the smaller of the two,
+// which was backwards. Inherit the pre's size instead so the two match.
+pre code {
+  font-size: 1em;
+}
+
 // Zola 0.22+ (giallo) emits one span per line, with line numbers as an inline
 // `.giallo-ln` span rather than the old `<table><td>` gutter.
 pre.giallo {
