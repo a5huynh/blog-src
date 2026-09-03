@@ -5,6 +5,7 @@ title = "Generating Blue Noise w/ Poisson Disk Sampling"
 tags = ["rustlang", "procgen"]
 
 [extra]
+math = true
 location = "San Francisco"
 +++
 

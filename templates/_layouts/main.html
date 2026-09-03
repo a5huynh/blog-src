@@ -5,16 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="a5huynh" />
 
-  {% block meta %}
-  {% endblock meta %}
+  {# Defaults for non-post pages (home, tags, 404). page.html overrides these. #}
+  {% block meta -%}
+  <meta name="description" content="{{ config.description }}" />
+  <meta property="og:title" content="{{ config.title }}" />
+  <meta property="og:description" content="{{ config.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ config.base_url | safe }}" />
+  <meta name="twitter:card" content="summary" />
+  {% endblock meta -%}
 
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
   {% block favicon -%}
   <link rel="icon" href="{{ config.extra.favicon }}">
   {% endblock favicon -%}
 
-  {% if config.generate_rss -%}
-  <link rel="alternate" type="application/rss+xml" title="{{ base_url }}" href="{{ base_url }}/feed.rss">
+  {% if config.generate_feeds -%}
+  <link rel="alternate" type="application/atom+xml" title="{{ config.title }}"
+    href="{{ get_url(path=config.feed_filenames[0], trailing_slash=false) | safe }}">
   {% endif -%}
   {# Load real italic and bold faces. Requesting only wght 400 meant every <em> and
      <strong> in a post was synthesised (faux) italic/bold by the browser. #}
@@ -38,8 +46,9 @@
     </div>
     <div id='social-icons'>
       <div>
-        <a
-          href='http://www.google.com/recaptcha/mailhide/d?k=01uNCZrwDlz2I3VKthc1vVRw==&amp;c=6YTbdnM2V4n_HnbJamUSEoWCPMs3doQFXFC1r8BFdkU='>
+        {# Was a Google Mailhide link; Google shut that service down in 2018 and it
+           had been returning 404. #}
+        <a href='mailto:a5thuynh@gmail.com'>
           <img src='{{ get_url(path="img/email.svg", trailing_slash=false) }}' alt='Email me!'>
         </a>
       </div>
@@ -64,8 +73,8 @@
     Founder @ <a href='https://spyglass.fyi'>Spyglass Search</a>.<br>
     Like what you see? My website is <a href='https://github.com/a5huynh/a5huynh.github.com'>open source!</a>
   </div>
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {# MathJax is opt-in per page via `[extra] math = true` — see page.html. It used to
+     load on all 33 pages, but only 4 posts contain any maths. #}
   {% block js %}
   {% endblock js %}
 </body>

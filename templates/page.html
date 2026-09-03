@@ -3,12 +3,17 @@
 {% block title %}{{ page.title }}{% endblock title %}
 
 {% block meta %}
-<meta name="title" content="{{ page.title }}" />
-<meta name="description" content="{{ page.summary }}" />
+{# page.summary is rendered HTML, so it has to be stripped — otherwise the meta
+   description ships as "&lt;p&gt;…&lt;/p&gt;" and search results show the tags. #}
+{% set summary = page.summary | striptags | trim %}
+<meta name="description" content="{{ summary }}" />
 
 <meta property="og:title" content="{{ page.title }}" />
-<meta property="og:description" content="{{ page.summary }}" />
-<meta property="og:type" content="website" />
+<meta property="og:description" content="{{ summary }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ page.permalink | safe }}" />
+<meta property="article:published_time" content="{{ page.date }}" />
+<meta name="twitter:card" content="summary" />
 {% endblock meta %}
 
 {% block content %}
@@ -28,3 +33,10 @@
   <span id='#thats-all-folks'>&#8718;</span>
 </div>
 {% endblock content %}
+
+{% block js %}
+{% if page.extra.math %}
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+{% endif %}
+{% endblock js %}

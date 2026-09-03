@@ -5,6 +5,7 @@ title = "Nets, Branches, and Pipes."
 tags = ["machine-learning"]
 
 [extra]
+math = true
 location = "San Francisco"
 +++
 

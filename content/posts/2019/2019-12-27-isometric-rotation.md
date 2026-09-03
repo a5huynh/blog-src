@@ -5,6 +5,7 @@ title = "Rotating an isometric projection"
 tags = ["rustlang", "gamedev"]
 
 [extra]
+math = true
 location = "Los Angeles"
 +++
 

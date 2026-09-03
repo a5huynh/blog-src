@@ -2,6 +2,7 @@
 title = "Blog migration"
 
 [extra]
+math = true
 location = "San Diego"
 +++
 

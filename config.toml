@@ -1,12 +1,18 @@
 # The URL the site will be built for
 base_url = "https://a5huynh.github.io"
 title = "Andrew Huynh, The Blog"
+# Used for the default meta description and og:description on non-post pages.
+description = "Thoughts and ramblings."
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
+
+# Atom feed at /atom.xml
+generate_feeds = true
+feed_filenames = ["atom.xml"]
 
 taxonomies = [
     {name = "tags"}
