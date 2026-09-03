@@ -1,5 +1,3 @@
-{% import "macros/tags.html" as tags %}
-
 {% extends "_layouts/main.html" -%}
 {% block content -%}
 {% set_global previous_year = 0 %}
@@ -27,7 +25,7 @@
             </div>
             <div class='post-excerpt'>{{ page.summary | safe }}</div>
             {% if page.taxonomies.tags %}
-            {{ tags::render_list(tags=page.taxonomies.tags, selected=term.name) }}
+            {{ <tag_list tags={page.taxonomies.tags} selected={term.name} /> }}
             {% endif %}
         </li>
         {% if loop.last -%}

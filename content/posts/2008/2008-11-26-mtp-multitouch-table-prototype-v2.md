@@ -40,7 +40,7 @@ I'll try to post as many updates of our progress as I can. I should have a
 little more time for such follies next quarter
 
 
-{{ gallery(images=[
+{{ <gallery images={[
     "/img/MTPv2/242879-0-IMG_0142.jpg.scaled.500.jpg",
     "/img/MTPv2/242879-0-IMG_0151.jpg.scaled.500.jpg",
     "/img/MTPv2/242879-0-IMG_0150.jpg.scaled.500.jpg",
@@ -52,4 +52,4 @@ little more time for such follies next quarter
     "/img/MTPv2/242879-0-IMG_0144.jpg.scaled.500.jpg",
     "/img/MTPv2/242879-0-IMG_0143.jpg.scaled.500.jpg",
     "/img/MTPv2/242879-0-IMG_0152.jpg.scaled.500.jpg",
-]) }}
+]} /> }}

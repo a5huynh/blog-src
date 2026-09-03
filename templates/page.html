@@ -1,5 +1,3 @@
-{% import "macros/tags.html" as tags %}
-
 {% extends "index.html" %}
 
 {% block title %}{{ page.title }}{% endblock title %}
@@ -18,10 +16,10 @@
   <h1>{{ page.title }}</h1>
   <p class='meta'>
     {{ page.date | date(format="%Y %B %e") }} - {{ page.extra.location }} |
-    <span>{{ page.content | wordcount }} words</span>
+    <span>{{ page.word_count }} words</span>
   </p>
   {% if page.taxonomies.tags %}
-  {{ tags::render_list(tags=page.taxonomies.tags) }}
+  {{ <tag_list tags={page.taxonomies.tags} /> }}
   {% endif %}
 
   <div class='post'>

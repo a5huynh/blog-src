@@ -125,11 +125,11 @@ Below are some photos of the final soldered result:
 * Photo #2: Closeup of the soldering for the main board.
 * Photo #3: Closeup of the LCD setup.
 
-{{ gallery(images=[
+{{ <gallery images={[
     "/img/2020/covid-tracker/overview.jpg",
     "/img/2020/covid-tracker/soldering-work.jpg",
     "/img/2020/covid-tracker/lcd.jpg"
-]) }}
+]} /> }}
 
 
 ## Designing & Printing an Enclosure

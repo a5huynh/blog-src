@@ -1,0 +1,50 @@
+{# Tera v2 components (Zola 0.23+). These replace the old macros/ and shortcodes/
+   directories. Components are registered globally — no import needed — and are
+   callable from both templates and markdown content. #}
+
+{% component tag_list(tags, selected = "") %}
+{% if tags %}
+<div class='post-tags'>
+    {% for tag in tags %}
+    <a href='{{ get_taxonomy_url(kind="tags", term=tag) }}'>
+        <span
+            {% if tag == selected %}
+            class="selected-tag"
+            {% endif %}>
+            #{{ tag }}
+        </span>
+    </a>
+    {% endfor %}
+</div>
+{% endif %}
+{% endcomponent tag_list %}
+
+{# NOTE: components invoked from markdown must emit their HTML flush-left.
+   Any line indented 4+ spaces gets parsed as a markdown code block. #}
+
+{% component caption(text) %}
+<section class="caption_container">
+{{ body | markdown | safe }}
+<div class="caption">{{ text }}</div>
+</section>
+{% endcomponent caption %}
+
+{% component gallery(images) %}
+<script type="text/javascript">
+function show_image(image) {
+document.getElementById('selected_img').src = image;
+}
+</script>
+<div class="gallery">
+<div class="gallery_nav">
+<ul>
+{%- for image in images %}
+<li><a href='javascript:void' onclick="show_image('{{ image }}')">&middot;</a></li>
+{%- endfor %}
+</ul>
+</div>
+<div class="gallery_container">
+<img id="selected_img" src='{{ images[0] }}' style="width:100%">
+</div>
+</div>
+{% endcomponent gallery %}
