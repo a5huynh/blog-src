@@ -17,17 +17,38 @@ img + em {
 }
 
 // Styling for the `caption` component in templates/components.html.
+//
+// Mobile-first: the note sits inline beneath the image. Only on screens wide
+// enough to actually have a margin does it move out into one.
+$caption-width: 160px;
+
 .caption_container {
   position: relative;
 
   .caption {
+    color: $grey;
+    display: block;
     font-size: $small-content-size;
     font-style: normal;
     line-height: $content-size * 1.25;
-    margin-right: -160px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 160px;
+    margin: -0.5em 0 0 0;
+    padding-bottom: 0.5em;
+    text-align: left;
+  }
+
+  // The article's content box is 680px and the note hangs $caption-width past
+  // its right edge, so a true margin note needs (vw - 680) / 2 >= 160 plus the
+  // article's 3em side padding -- i.e. vw >= 1000px, where it sits flush
+  // against the window. 1060px leaves a ~30px gutter. Below this the note used
+  // to run off the page and force a horizontal scrollbar.
+  @media (min-width: 1060px) {
+    .caption {
+      margin: 0 (-$caption-width) 0 0;
+      padding-bottom: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: $caption-width;
+    }
   }
 }
