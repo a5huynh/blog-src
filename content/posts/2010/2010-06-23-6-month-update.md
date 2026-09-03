@@ -27,7 +27,7 @@ have taken up a large portion of those 6 months:
 [Rock My World!](http://rockmyworld.dvanoni.com/rmw2) - Must be viewed on iPhone... since it's an iPhone application!
 
 ![NatGeo: Search for Genghis Khans Tomb](/img/2010/20902048-0-Screen_shot_2010-06-22_at_9.04.47_PM.png.scaled500.png)
-[National Geographic: The Tomb of Genghis Khan](http://exploration.nationalgeographic.com)
+[National Geographic: The Tomb of Genghis Khan](https://web.archive.org/web/20210117224111/http://exploration.nationalgeographic.com/)
 
 ![Graduation!](/img/2010/20902048-0-IMG_2128.JPG.scaled500.jpg)
 UCSD Graduation!

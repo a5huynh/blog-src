@@ -75,4 +75,4 @@ Otherwise, why bother?
 
 [problemmatic-youth]: http://www.nytimes.com/2014/03/16/magazine/silicon-valleys-youth-problem.html
 
-[kpcb-trends]: http://www.kpcb.com/blog/2015-internet-trends
+[kpcb-trends]: https://web.archive.org/web/20180627235821/http://www.kpcb.com/blog/2015-internet-trends

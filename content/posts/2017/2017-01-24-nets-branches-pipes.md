@@ -183,7 +183,7 @@ data (SIMD) instructions.
 Thanks for taking the time! I hope you enjoyed reading and learning about the application of perceptrons in the world of branch prediction.
 
 
-[amd]: http://www.amd.com/en-us/press-releases/Pages/amd-takes-computing-2016dec13.aspx
+[amd]: https://web.archive.org/web/20180612141627/https://www.amd.com/en-us/press-releases/Pages/amd-takes-computing-2016dec13.aspx
 [bp]: https://en.wikipedia.org/wiki/Branch_predictor "Branch Prediction"
 [pc]: https://en.wikipedia.org/wiki/Perceptron "Perceptron"
 [bp-paper]: https://www.cs.utexas.edu/~lin/papers/hpca01.pdf "Dynamic Branch Prediction with Perceptrons"

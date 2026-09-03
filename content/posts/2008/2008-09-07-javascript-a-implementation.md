@@ -10,7 +10,7 @@ location = "San Diego"
 
 So a little background on my implementation (feel free to skip this)....
 
-In my freshman year at UCSD I was recruited by [CSES](http://cses.ucsd.edu)
+In my freshman year at UCSD I was recruited by [CSES](https://web.archive.org/web/20230607104546/https://cses.ucsd.edu/)
 to work on a small game project. It was supposed to be generic enough so
 that the frontend (my game engine) could connect to a back-end that could
 be written in any language as long as it conformed to a set of standards we

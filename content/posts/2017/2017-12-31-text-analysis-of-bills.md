@@ -26,7 +26,7 @@ charts.
 > All code used for this analysis is available here:
 > [https://github.com/a5huynh/bill-analysis][repo]
 
-[gv]: https://getversed.io
+[gv]: https://web.archive.org/web/20200812114731/https://getversed.io/
 [repo]: https://github.com/a5huynh/bill-analysis
 
 

@@ -19,7 +19,7 @@ include sourcing all parts, writing the necessary code, and designing and
 time, as my first foray into electronics design, I decided to make a little
 device to keep track of [US COVID-19 stats][covid-api].
 
-[covid-api]: https://covidtracking.com/api/us
+[covid-api]: https://covidtracking.com/data/api
 
 <!-- more -->
 
