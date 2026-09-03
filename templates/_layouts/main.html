@@ -16,7 +16,12 @@
   {% if config.generate_rss -%}
   <link rel="alternate" type="application/rss+xml" title="{{ base_url }}" href="{{ base_url }}/feed.rss">
   {% endif -%}
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inconsolata&display=swap" rel="stylesheet">
+  {# Load real italic and bold faces. Requesting only wght 400 meant every <em> and
+     <strong> in a post was synthesised (faux) italic/bold by the browser. #}
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@400;700&display=swap"
+    rel="stylesheet">
   {% block css -%}
   <link rel="stylesheet" href='{{ get_url(path="blog.css", trailing_slash=false) | safe }}' type="text/css">
   {% endblock css -%}

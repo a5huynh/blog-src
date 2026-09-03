@@ -2,17 +2,12 @@
 
 *::selection {
   background: $orange;
-  color: white;
-}
-
-*::-webkit-selection {
-  background: $orange;
-  color: white;
+  color: $paper;
 }
 
 *::-moz-selection {
   background: $orange;
-  color: white;
+  color: $paper;
 }
 
 p {
@@ -43,6 +38,6 @@ iframe {
 
 @media (max-width: 650px) {
   iframe {
-    height: 256px;;
+    height: 256px;
   }
 }

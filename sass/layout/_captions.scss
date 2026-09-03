@@ -1,7 +1,6 @@
 // Image captions
-// Any text wrapped in an "<em>" tag after an image will be considered the
-// image caption
-figure + em,
+// Any text wrapped in an "<em>" tag directly after an image is treated as the
+// image's caption.
 img + em {
   border-top: 0;
   border-radius: 0 0 8px 8px;
@@ -17,35 +16,7 @@ img + em {
   width: auto;
 }
 
-figure + p > em {
-  display: block;
-  color: $grey;
-  font-size: $small-content-size;
-  font-style: normal;
-  line-height: $small-content-size * 2;
-  margin-top: -1.25em;
-  padding: 0.75em;
-  border: 1px solid $grey;
-  border-top: 0;
-  border-radius: 0 0 3px 3px;
-
-  strong {
-    color: $orange;
-    font-weight: normal;
-    font-variant: small-caps;
-  }
-}
-
-.caption {
-  font-size: $small-content-size;
-  font-style: normal;
-  line-height: $content-size * 1.25;
-  margin-right: -160px;
-  position: absolute;
-  right: 0;
-  width: 160px;
-}
-
+// Styling for the `caption` component in templates/components.html.
 .caption_container {
   position: relative;
 

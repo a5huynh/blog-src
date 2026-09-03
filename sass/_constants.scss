@@ -1,20 +1,25 @@
 // Font's used in the site
 $header-font: 'Inconsolata', sans-serif;
 $content-font: 'EB Garamond', 'Times New Roman', serif;
-$code-font: 'Source Code Pro', 'Inconsolata', 'Courier New', monospace;
+// Inconsolata first because it's the only mono face the site actually loads.
+// Leading with Source Code Pro meant code rendered differently depending on
+// whether a given visitor happened to have it installed locally.
+$code-font: 'Inconsolata', 'Source Code Pro', 'Courier New', monospace;
 
-$golden-ratio: 1.6;
 $base-size: 12pt;
 $content-size: 1em;
 $small-content-size: 0.85em;
 $header-size: $content-size * 2;
 
 // Colors used in the site
-$white:  #FAFAFA;
 $orange: #ff8000;
-$blue:   #1691d8;
 $grey:   #999;
-$black:   darken( $grey, 30% );
+$paper:  #fff;
+// Body copy and headings. Named $ink rather than $black because it resolves to
+// #4d4d4d — a dark grey, not black.
+$ink:    darken( $grey, 30% );
+// Reserved for <strong>, which is deliberately darker than $ink for emphasis.
+$ink-strong: #000;
 
 // Header sizes
 $h1-size: $header-size;

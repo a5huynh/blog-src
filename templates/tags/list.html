@@ -1,0 +1,18 @@
+{% extends "_layouts/main.html" -%}
+
+{% block title %}Tags{% endblock title %}
+
+{% block content -%}
+<div class="year-section">
+    <h1>tags</h1>
+</div>
+<div class='article'>
+    <div class='post-tags tag-index'>
+        {% for term in terms | sort(attribute="name") %}
+        <a href='{{ term.permalink | safe }}'>
+            <span>#{{ term.name }} <em>{{ term.pages | length }}</em></span>
+        </a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content -%}

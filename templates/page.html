@@ -15,7 +15,7 @@
 <div class='article'>
   <h1>{{ page.title }}</h1>
   <p class='meta'>
-    {{ page.date | date(format="%Y %B %e") }} - {{ page.extra.location }} |
+    {{ page.date | date(format="%Y %B %-d") }} - {{ page.extra.location }} |
     <span>{{ page.word_count }} words</span>
   </p>
   {% if page.taxonomies.tags %}

@@ -16,15 +16,6 @@ pre {
 }
 
 
-figure.highlight {
-  border: 0;
-
-  pre {
-    border: 0;
-    padding: 0;
-  }
-}
-
 code {
   font-family: $code-font;
   font-size: $small-content-size;
@@ -48,12 +39,15 @@ pre.giallo {
   white-space: pre;
   word-wrap: normal;
 
-  // The line number gutter
+  // The line number gutter. Sized in `ch` so it hugs the digits instead of
+  // leaving a slab of dead space to their left — no code block on the site
+  // passes line 32, and a fixed 32px box fit ~4.7 characters. Numbers stay
+  // right-aligned against the rule, so 1- and 2-digit lines line up.
   .giallo-ln {
     display: inline-block;
-    width: 32px;
-    margin-right: 8px;
-    padding-right: 8px;
+    width: 2ch;
+    margin-right: 0.75em;
+    padding-right: 0.75em;
     text-align: right;
     user-select: none;
     border-right: 1px solid #AAA;

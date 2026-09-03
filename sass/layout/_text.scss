@@ -1,7 +1,8 @@
 body {
   font-family: $content-font;
   font-size: $base-size;
-  font-weight: lighter;
+  // `lighter` is relative and resolved to 100, a weight the site never loads.
+  font-weight: 400;
   margin-top: 1em;
 }
 
@@ -35,5 +36,5 @@ blockquote {
 }
 
 strong {
-  color: black;
+  color: $ink-strong;
 }

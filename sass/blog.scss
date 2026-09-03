@@ -21,7 +21,7 @@ hr {
 }
 
 .article {
-  color: $black;
+  color: $ink;
   line-height: 150%;
   margin: 0 auto 1em auto;
   max-width: 680px;
@@ -121,13 +121,13 @@ ul.posts {
 
   a:hover {
     span {
-      color: white;
+      color: $paper;
       background-color: $orange;
     }
   }
 
   .selected-tag {
-    color: white;
+    color: $paper;
     background-color: $orange;
   }
 
@@ -138,6 +138,31 @@ ul.posts {
     padding: 4px 8px;
     margin-right: 1em;
     text-align: center;
+  }
+}
+
+// The /tags/ index: every tag with a post count. Uses flex so a long tag list
+// wraps evenly instead of relying on inline spacing.
+.tag-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75em;
+  font-size: 1em;
+  margin-bottom: 3em;
+
+  span {
+    display: inline-block;
+    margin-right: 0;
+  }
+
+  em {
+    color: $grey;
+    font-style: normal;
+    padding-left: 2px;
+  }
+
+  a:hover span em {
+    color: $paper;
   }
 }
 
@@ -177,7 +202,7 @@ ul.posts {
   }
 }
 
-@media (min-width: 650px) and (max-width: 900px) {
+@media (min-width: 651px) and (max-width: 900px) {
   .article {
     padding: 0 3em;
   }

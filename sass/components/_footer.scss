@@ -7,7 +7,9 @@
 }
 
 @media (max-width: 650px) {
+  // Bumped for legibility on small screens, but kept below body copy so the
+  // footer doesn't end up more prominent on mobile than the posts themselves.
   .footer {
-    font-size: 1em;
+    font-size: 0.875em;
   }
 }
