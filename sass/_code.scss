@@ -39,15 +39,33 @@ pre.giallo {
   white-space: pre;
   word-wrap: normal;
 
-  // The line number gutter. Sized in `ch` so it hugs the digits instead of
-  // leaving a slab of dead space to their left — no code block on the site
-  // passes line 32, and a fixed 32px box fit ~4.7 characters. Numbers stay
-  // right-aligned against the rule, so 1- and 2-digit lines line up.
+  // Tighter than the 16px the shared `pre` rule applies, so the gutter sits
+  // closer to the block's left edge.
+  padding-left: 10px;
+
+  // The line number gutter. No code block on the site passes line 32, so this
+  // only ever holds one or two digits.
   .giallo-ln {
     display: inline-block;
-    width: 2ch;
-    margin-right: 0.75em;
-    padding-right: 0.75em;
+
+    // Sized in `em`, NOT `ch`. `ch` is resolved from the first available
+    // font's metrics, which here is the fallback rather than the loaded
+    // Inconsolata, so `2ch` came out at 11.55px against the 11.56px that two
+    // digits actually occupy -- zero slack, arrived at by coincidence. In
+    // Inconsolata a digit advance is 0.5em, so two digits are exactly 1em.
+    width: 1.1em;
+    margin-right: 0.55em;
+    padding-right: 0.5em;
+
+    // Overlap consecutive boxes by 1px. The line advance is a fractional
+    // 20.41px, so although layout reports the boxes as exactly touching
+    // (gap = 0), they rasterise with a 1px seam at every line boundary on any
+    // HiDPI display -- the rule renders as a dashed line at DPR 2 and 3. The
+    // overlap is absorbed by the negative margin, so line spacing is
+    // unchanged. Verified 0 painted gaps at DPR 1, 2 and 3.
+    padding-bottom: 1px;
+    margin-bottom: -1px;
+
     text-align: right;
     user-select: none;
     border-right: 1px solid #AAA;
